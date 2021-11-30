@@ -31,7 +31,7 @@ Node* deletionAtFirst(Node* head)
     Node* ptr = head;
     head = ptr->next;
     delete(ptr);
-
+    ptr=NULL; 
     return head;
 }
 int main()

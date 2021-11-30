@@ -14,7 +14,7 @@ void bubbleSort(int arr[], int size){
     for(int i=0; i<size-1; i++){
 
         for(int j=0; j<size-1-i; j++){
-
+            // if J greater than J+1 then swap two numbers...
             if(arr[j]>arr[j+1]){
                 int temp = arr[j];
                 arr[j] = arr[j+1];

@@ -9,10 +9,12 @@
  
 void linkedListTraversal( Node *head){
      Node *ptr = head;
+     cout<<"head <- ";
     do{
         cout<<ptr->data<<" ";
         ptr = ptr->next;
     }while(ptr!=head);
+    cout<<"-> head";
 }
  
 int main(){

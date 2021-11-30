@@ -1,4 +1,16 @@
-//
+#include<iostream>
+using namespace std;
+
+int linearSearch(int arr[], int number, int size){
+
+    for(int i=0; i<size-1; i++){
+
+        if(arr[i]==number)
+            return i;
+        
+    }
+    cout<<"\nNumber Not Found IN Array.."<<endl;;
+}
 int main()
 {
     int n;
@@ -10,9 +22,9 @@ int main()
     {
         cin>>arr[i];
     }
-    cout<<" What number you want to search in array.."<<endl;
+    cout<<" Whichnumber you want to search in array.."<<endl;
     cin>>se;
-    int foundindex = BinarySearch(arr, se, n);
+    int foundindex = linearSearch(arr, se, n);
     cout<<" Search element found at index number.."<<foundindex<<endl;
 
     return 0;

@@ -38,6 +38,7 @@ Node* insertAtIndex(Node* head, int index)
     }
     p->next = ptr->next;
     delete(ptr);
+    ptr=NULL;
     return head;
 }
 int main()

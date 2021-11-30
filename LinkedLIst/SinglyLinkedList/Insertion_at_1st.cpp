@@ -13,7 +13,6 @@ class Node
     }
 };
 
-// traversal a linked list means print all elements in linked list..
 void display(Node* head)
 {
     Node* ptr = head;

@@ -16,13 +16,15 @@ class Node
 // traversal a linked list means print all elements in linked list..
 void display(Node* head)
 {
+    int count=0;
     Node* ptr = head;
     while(ptr!=NULL)
-    {
-        cout<<ptr->data<<" -> ";
-        ptr = ptr->next;
+    {          
+                count++;
+                ptr = ptr->next;
     }
-    cout<<"NULL";
+    cout<<count;
+
 }
 int main()
 {
@@ -33,7 +35,7 @@ int main()
     Node* fourth = new Node();
 
     first->data = 10;           // assign a data to first node
-    first->next = second;       // linked  next node second , 
+    first->next = second;       // linked to next node second , 
 
     second->data = 20;           // assign a data to first node
     second->next = third;       // linked to second node to third
