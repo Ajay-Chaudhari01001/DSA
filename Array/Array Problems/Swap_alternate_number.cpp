@@ -2,18 +2,19 @@
 #include<iostream>
 using namespace std;
 
-void printArray(int arr[], int size){
-    for(int i=0; i<size; i++){
-        cout<<arr[i]<<" ";
-    }
-}
-
 void swapAlternate(int arr[], int size){
 
     for(int i=0; i<size; i+2){
-        if(i+1<size){
-            swap(arr[i], arr[i+1]);
-        }
+
+            int temp;
+            temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i] = temp;
+    }
+}
+void printArray(int arr[], int size){
+    for(int i=0; i<size; i++){
+        cout<<arr[i]<<" ";
     }
 }
 int main(){

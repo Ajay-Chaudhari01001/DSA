@@ -2,7 +2,7 @@
 
 #include<iostream>
 using namespace std;
-
+     
 int peakelement(int arr[], int size){
     
     int first = 0;
