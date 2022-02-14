@@ -1,4 +1,6 @@
 // w.a.p to Remove Loop in Cycle Linked List...
+// Time Complexity O(n)...
+// Space Complexity O(n)... Due to using map
 #include<iostream>
 #include<map>
 
@@ -37,6 +39,7 @@ Node* removeLoop (Node* &head) {
         temp = temp->next;
     }
     
+    // removing loop pointing to the NULL ...
     temp->next = NULL;
     return head;
 }

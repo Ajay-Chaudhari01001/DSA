@@ -19,7 +19,7 @@ void insertAtTail(Node* &tail, int d) {
         tail = NewNode;
 }
 
-// remove duplicate nodes in linked list..
+// remove duplicate nodes in Sorted linked list..
 Node* removeDuplicate (Node* head) {
     Node* curr = head;
 
@@ -31,7 +31,8 @@ Node* removeDuplicate (Node* head) {
          if(curr->data == curr->next->data) {
              Node* next_next = curr->next->next;
              Node* nodeTodelete = curr->next;
-
+            
+            // deleting the duplicate node....
              delete(nodeTodelete);
 
              curr->next = next_next;
